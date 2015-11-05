@@ -1,52 +1,34 @@
+<!-- HTML FOR THE HOMEPAGE OF AUDIOMAX
+
+background img source: https://farm8.staticflickr.com/7169/6457917267_5b8356e287_o_d.jpg, https://www.flickr.com/photos/recording-studio-philippines/6457917267/in/photolist-aQEvPa-8EYnKn-9WdWTn-2i8b1P-a1HQw1-9wwmdA-9ADV5T-4oGqGa-4w71GR-e1nbkQ-563oQC-3ywAfZ-8TepVu-747spe-69j1Va-ndHNn6-4MvQXr-e6kUyM-9WgMvA-93WS31-e9pxFk-4nCwV1-z7irV-shCLDu-42F4Nh-byNbFx-byNbCx-bkTiV1-xkLLAD-9MuQCS-93TprX-2pWpA6-ak2cne-9MsbEH-9YrH8U-666MwP-bxhJun-aNCWu4-4V1nLQ-e8AQro-93TpCv-9n5-->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>AudioMax</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="AudioMax for YouTube and Soundcloud">
-	<meta name="author" content="AudioMax">
-	<link rel="shortcut icon" href="img/favicon.png">
+	<body class="home-bg">
+		<head>
+			<title>A U D I O M A X</title>
+			<link rel="shortcut icon" href="img/favicon.png">
+			<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		</head>
 
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.6/css/nanoscroller.min.css">
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.6/javascripts/jquery.nanoscroller.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/jquery.youtubepicker.css">
-	<script type="text/javascript" src="js/jquery.youtubepicker.js"></script>
-
-    <!--font-Awesome-->
-	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-	<!--font-Awesome-->
-</head>
-
-<body>
-	<div id="search" class="container">
-		<div class="text-center">
-			<form class="form-inline">
-				<div class="form-group">
-					<a href="index.html"><img class="logo img-responsive" src="img/logo.png"></a>
-					<input type="text" name="video" class="yp form-control" placeholder="Search a video">
-					<button class="btn btn-default"><i class="search-btn fa fa-search"></i></button>
-					<div class="empty"></div>
-				</div>
-			</form>
+		<div class="home-container">
+			<div class="home-mask">
+				<h4 class="home-text">AUDIOMAX</h4>
+			</div>
+			<p class="subtitle">MAXIMIZE YOUR AUDIO EXPERIENCE.</p>
+			<div class="login-signup-container">
+				<a href="account_page.html">
+					<button type="button" class="btn home-button log-in">log in</button>
+				</a>
+				<div class="horizontal-divider"></div>
+				<a href="account_page.html">
+					<button type="button" class="btn home-button log-in">new user</button>
+				</a>
+			</div>
+			<a href="about_page.html" class="home-about-text">ABOUT</a>
 		</div>
-	</div>
 
-	<script type="text/javascript" src="api.js"></script>
-
-	<script type="text/javascript">
-		$(function(){
-			var credentials = { 
-				'API_KEY' : api.key
-			};
-			$('.yp').youtubepicker(credentials);
-		});
-	</script>
-</body>
+	</body>
 </html>
