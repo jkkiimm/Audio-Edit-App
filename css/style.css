@@ -1,5 +1,5 @@
 body.home-bg{
-	background-image: url("edited2.jpg");
+	background-image: url("http://www.walldevil.com/wallpapers/w02/601136-audio-tapes-cassette-grey-background-minimalistic.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -10,7 +10,8 @@ body.home-bg{
 
 body.search-page-bg, .about-page-bg,
 .account-page-bg{
-	background-color: #2E2E2E
+	background-color: #2E2E2E;
+  position: fixed;
 }
 
 .home-container{
@@ -22,8 +23,17 @@ body.search-page-bg, .about-page-bg,
 }
 
 .input-container{
-	margin: 3% 30% 0% 30%;
+  margin-left: 63%;
+  margin-top:  15%;
 }
+
+.signup-container{
+	margin: 3% 8% 0% 8%;
+}
+.login-container{
+  margin: 3% 8% 0% 8%;
+}
+
 
 .home-about-text{
 	letter-spacing: 8px;
@@ -32,6 +42,11 @@ body.search-page-bg, .about-page-bg,
 }
 .home-about-text:hover{
 	color: rgba(143, 188, 143, 0.87);
+}
+
+table{
+  margin-left: 62%; 
+  margin-top: 15%;
 }
 
 h4.home-text{
@@ -50,6 +65,23 @@ h4.about-text{
 	letter-spacing: 18px;
 	border-style: double;
 	padding: 10px 25px;
+}
+h4.signup-text{
+  color: rgba(255, 255, 224, 0.88);
+  font-size: 25pt;
+  letter-spacing: 18px;
+  border-style: double;
+  padding: 10px 25px;
+  margin-left: 70%;
+  margin-right: -106%
+}
+h4.login-text{
+  color: rgba(255, 255, 224, 0.88);
+  font-size: 25pt;
+  letter-spacing: 18px;
+  border-style: double;
+  padding: 10px 25px;
+  margin-right: -33%;
 }
 
 .home-button{
@@ -131,7 +163,18 @@ p.powered-by{
 	font-size: 8pt;
 	color: white;
 }
+p.account-text{
+  color: white;
+  font-weight: 200;
+  margin-bottom: 2px;
+  font-size: 10pt;
+}
+th.login-form{
 
+}
+th.signup-form{
+  
+}
 .logo{
 	height: 90px;
 	margin: 0 auto;
