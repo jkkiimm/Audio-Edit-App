@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<body class="home-bg">
+	<body class="account-page-bg">
 		<head>
 			<title>A B O U T</title>
 			<link rel="shortcut icon" href="img/favicon.png">
-			<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />	
+			<link href="css/account_style.css" rel="stylesheet" type="text/css" media="all" />
 			<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 		</head>
 
-		<div class="about-container">
-			<a href="index.html" title="go home">
-				<h4 class="about-text">LOG-IN or SIGN-UP</h4>
-			</a>
-			<div class="input-container">
-				<div class="input-group margin-bottom-sm">
-					<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-				  	<input class="form-control" type="text" placeholder="Email address">
-				</div>
+		<table>
+			<tr class="top">
+				<th><h4 class="login-text">LOG-IN</h4></th>
+				<th><h4 class="signup-text">SIGN-UP</h4></th>
+			</tr>
+			<tr>
+				<th class="login-form">
+					<div class="login-container">
+						<p class="account-text"> Enter email:</p>
+						<div class="input-group margin-bottom-sm">
+							<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+						  	<input class="form-control" type="text" placeholder="Email address">
+						</div>
+						<div class="vertical-divider"></div>
+						<p class="account-text"> Enter password:</p>
+						<div class="input-group">
+						  	<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+						  	<input class="form-control" type="password" placeholder="Password">
+						</div>
+						<div class="vertical-divider"></div>
+						<div class="input-group">
+							<a class="btn btn-default btn-sm" href="search_page.html">Log In</a>
+						</div>
+					</div>
+
+				</th>
 				<div class="vertical-divider"></div>
-				<div class="input-group">
-				  	<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-				  	<input class="form-control" type="password" placeholder="Password">
-				</div>
-			</div>
-		</div>
+				<th class="signup-form">
+					<div class="signup-container">
+						<p class="account-text"> Full Name:</p>
+						<div class="input-group margin-bottom-sm">
+							<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+						  	<input class="form-control" type="text" placeholder="Name">
+						</div>
+						<div class="vertical-divider"></div>
+						<p class="account-text"> Enter email:</p>
+						<div class="input-group">
+						  	<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+						  	<input class="form-control" type="password" placeholder="Email address">
+						</div>
+						<div class="vertical-divider"></div>
+						<p class="account-text"> Enter password:</p>
+						<div class="input-group margin-bottom-sm">
+							<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+						  	<input class="form-control" type="text" placeholder="Password">
+						</div>
+						<div class="vertical-divider"></div>
+						<p class="account-text"> Re-enter password:</p>
+						<div class="input-group">
+						  	<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+						  	<input class="form-control" type="password" placeholder="Confirm password">
+						</div>
+						<div class="vertical-divider"></div>
+						<div class="input-group">
+							<a class="btn btn-default btn-sm" href="search_page.html">Sign Up</a>
+						</div>
+					</div>
+				</th>
+			</tr>
+		</table>
 	</body>
 </html>

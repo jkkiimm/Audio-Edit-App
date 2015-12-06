@@ -1,0 +1,204 @@
+body.home-bg{
+	background-image: url("http://www.walldevil.com/wallpapers/w02/601136-audio-tapes-cassette-grey-background-minimalistic.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: sans-serif;
+	color: white;
+	position: fixed;
+}
+
+body.search-page-bg, .about-page-bg,
+.account-page-bg{
+	background-color: #2E2E2E;
+  position: fixed;
+}
+
+.home-container{
+	margin-top: 10%
+	position:
+}
+
+.about-countainer{
+	margin: 10% 0% 0% 30%;
+}
+
+.input-container{
+  margin-left: 63%;
+  margin-top:  15%;
+}
+
+.signup-container{
+	margin: 3% 8% 0% 8%; /*3% 8% 0% 8%*/
+}
+.login-container{
+  margin: 3% 8% 0% 8%;
+}
+
+
+.home-about-text{
+	letter-spacing: 8px;
+	font-size: 8pt;
+	margin-left: 35%;
+}
+.home-about-text:hover{
+	color: rgba(143, 188, 143, 0.87);
+}
+
+table{
+  margin-left: 62%; 
+  margin-top: 10%;
+}
+
+h4.home-text{
+	color: #FFFFE0;
+	letter-spacing: 18px;
+	display: inline-block;
+	border-style: double;
+	font-size: 35pt;
+	margin: 0px;
+	padding: 10px 30px 10px 42px;
+}
+
+h4.about-text{
+	color: rgba(255, 255, 224, 0.88);
+	font-size: 25pt;
+	letter-spacing: 18px;
+	border-style: double;
+	padding: 10px 25px;
+}
+h4.signup-text{
+  color: rgba(255, 255, 224, 0.88);
+  font-size: 25pt;
+  letter-spacing: 18px;
+  border-style: double;
+  padding: 10px 25px;
+  margin-left: 5%;
+  margin-right: 5% 
+}
+
+h4.login-text{
+  color: rgba(255, 255, 224, 0.88);
+  font-size: 25pt;
+  letter-spacing: 18px;
+  border-style: double;
+  padding: 10px 25px;
+  margin-left: 5%;
+  margin-right: 5%; 
+}
+
+.home-button{
+	background-color: rgba(143, 188, 143, 0.87);
+	font-family: courier;
+	font-size: 12pt;
+	padding: 4px 15px;
+	border-radius: 14px;
+}
+.home-button:focus,.home-button:active {
+   outline: none !important;
+   font-weight: bold;
+}
+
+.home-mask {
+  position: relative;
+  z-index: 100;
+  background: rgba(34, 34, 34, 0.57);
+  margin-bottom: 10px;
+  margin-right:107px;
+}
+
+.about-title-mask {
+  position: relative;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.64);
+  margin: 5% 37% 2% 38%;
+}
+
+.about-body-mask {
+  position: relative;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.76);
+  margin: 0 29% 3% 30%;
+}
+
+.login-signup-container{
+	margin-left: 14.5%;
+	margin-bottom: 53.5%;
+}
+
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+.horizontal-divider{
+    width:20%;
+    height:auto;
+    display:inline-block;
+}
+.vertical-divider{
+	height: 3%;
+	display:inline-block;
+}
+
+p.subtitle{
+	color: white;
+	letter-spacing: 10px;
+	margin: 4% 0 5% -6%;
+	font-size: 10pt;
+}
+p.about-body-text{
+	padding: 4% 10%;
+	color: rgba(143, 188, 143, 0.87);
+	line-height: 40px;
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+p.powered-by{
+	margin-top: 11.5%;
+	margin-left: 44%;
+	letter-spacing: 2px;
+	font-weight: 100;
+	font-size: 8pt;
+	color: white;
+}
+p.account-text{
+  color: white;
+  font-weight: 200;
+  margin-bottom: 2px;
+  font-size: 10pt;
+}
+tr {
+	width: 70%;
+}
+
+th {
+	margin-left: 10%;
+}
+
+th.login-form{
+
+}
+th.signup-form{
+	
+}
+.logo{
+	height: 90px;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.youtubepicker-panel{
+	margin: 0 auto;
+	margin-top: 1.75rem;
+}
+
+.youtubepicker-actions a{
+	border-radius: 3px;
+}
+
+
