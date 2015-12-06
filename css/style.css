@@ -1,27 +1,52 @@
 body.home-bg{
 	background-image: url("http://www.walldevil.com/wallpapers/w02/601136-audio-tapes-cassette-grey-background-minimalistic.jpg");
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	font-family: sans-serif;
-	color: white;
 	position: fixed;
 }
 
 body.search-page-bg, .about-page-bg,
 .account-page-bg{
-	background-color: #2E2E2E;
+	background-color: #424443;
   position: fixed;
 }
+.title-centered {
+  position: fixed;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-centered {
+  position: fixed;
+  width: 45%;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.account-container {
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 1170px;
+}
 
+.bottom-centered {
+  position: fixed;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);	
+}
+
+.right-align {
+	position: fixed;
+	top: 2%;
+	left: 84%;
+}
 .home-container{
 	margin-top: 10%
 	position:
 }
 
-.about-countainer{
-	margin: 10% 0% 0% 30%;
-}
 
 .input-container{
   margin-left: 63%;
@@ -39,33 +64,38 @@ body.search-page-bg, .about-page-bg,
 .home-about-text{
 	letter-spacing: 8px;
 	font-size: 8pt;
-	margin-left: 35%;
+	text-align: center;
+
 }
 .home-about-text:hover{
 	color: rgba(143, 188, 143, 0.87);
 }
 
 table{
-  margin-left: 62%; 
-  margin-top: 15%;
+  margin: auto;
+
 }
 
 h4.home-text{
 	color: #FFFFE0;
-	letter-spacing: 18px;
-	display: inline-block;
+	letter-spacing: 20px;
 	border-style: double;
-	font-size: 35pt;
-	margin: 0px;
-	padding: 10px 30px 10px 42px;
+	font-size: 30pt;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left:15px;
+	border-radius: 30px;
 }
 
 h4.about-text{
-	color: rgba(255, 255, 224, 0.88);
-	font-size: 25pt;
+	color: #FFFFE0;
+	font-size: 27pt;
 	letter-spacing: 18px;
 	border-style: double;
-	padding: 10px 25px;
+	padding: 10px 25px 10px 43px;
+	border-radius: 30px;
+	font-weight: 400;
 }
 h4.signup-text{
   color: rgba(255, 255, 224, 0.88);
@@ -73,8 +103,7 @@ h4.signup-text{
   letter-spacing: 18px;
   border-style: double;
   padding: 10px 25px;
-  margin-left: 70%;
-  margin-right: -106%
+  border-radius: 22px;
 }
 h4.login-text{
   color: rgba(255, 255, 224, 0.88);
@@ -82,15 +111,17 @@ h4.login-text{
   letter-spacing: 18px;
   border-style: double;
   padding: 10px 25px;
-  margin-right: -43%;
+  border-radius: 22px;
 }
-
+.signup{
+	margin-left: 25px;
+}
 .home-button{
 	background-color: rgba(143, 188, 143, 0.87);
 	font-family: courier;
-	font-size: 12pt;
+	font-size: 10pt;
 	padding: 4px 15px;
-	border-radius: 14px;
+	border-radius: 5px;
 }
 .home-button:focus,.home-button:active {
    outline: none !important;
@@ -101,27 +132,28 @@ h4.login-text{
   position: relative;
   z-index: 100;
   background: rgba(34, 34, 34, 0.57);
-  margin-bottom: 10px;
-  margin-right:107px;
+  border-radius: 30px;
 }
 
 .about-title-mask {
   position: relative;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.64);
-  margin: 5% 37% 2% 38%;
+  background: rgba(34, 34, 34, 0.57);
+  text-align: center;
+  border-radius: 30px;
 }
 
 .about-body-mask {
   position: relative;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.76);
-  margin: 0 29% 3% 30%;
+  background: rgba(34, 34, 34, 0.57);
+  text-align: center;
+  border-radius: 22px;
+
 }
 
 .login-signup-container{
-	margin-left: 14.5%;
-	margin-bottom: 53.5%;
+	text-align: center;
 }
 
 a{
@@ -131,7 +163,10 @@ a:hover{
 	text-decoration: none;
 	color: #333;
 }
-
+label{
+	color: #FFFFE0;
+	font-weight: 200;
+}
 .horizontal-divider{
     width:20%;
     height:auto;
@@ -145,11 +180,12 @@ a:hover{
 p.subtitle{
 	color: white;
 	letter-spacing: 10px;
-	margin: 4% 0 5% -6%;
-	font-size: 10pt;
+	font-size: 7pt;
+	margin-top: 10px;
+	text-align: center;
 }
 p.about-body-text{
-	padding: 4% 10%;
+	padding: 3% 5%;
 	color: rgba(143, 188, 143, 0.87);
 	line-height: 40px;
 	text-align: center;
@@ -157,8 +193,6 @@ p.about-body-text{
 	letter-spacing: 1px;
 }
 p.powered-by{
-	margin-top: 11.5%;
-	margin-left: 44%;
 	letter-spacing: 2px;
 	font-weight: 100;
 	font-size: 8pt;

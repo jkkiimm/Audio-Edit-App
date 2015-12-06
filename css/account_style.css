@@ -1,16 +1,7 @@
-body.home-bg{
-	background-image: url("http://www.walldevil.com/wallpapers/w02/601136-audio-tapes-cassette-grey-background-minimalistic.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	font-family: sans-serif;
-	color: white;
-	position: fixed;
-}
 
 body.search-page-bg, .about-page-bg,
 .account-page-bg{
-	background-color: #2E2E2E;
+	background-color: #424443;
   position: fixed;
 }
 
