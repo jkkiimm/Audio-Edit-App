@@ -15,7 +15,8 @@ body.search-page-bg, .about-page-bg,
 }
 
 .home-container{
-	margin: 240px 0px 0px 490px;
+	margin-top: 10%
+	position:
 }
 
 .about-countainer{
@@ -81,7 +82,7 @@ h4.login-text{
   letter-spacing: 18px;
   border-style: double;
   padding: 10px 25px;
-  margin-right: -33%;
+  margin-right: -43%;
 }
 
 .home-button{
