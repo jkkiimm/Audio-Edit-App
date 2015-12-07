@@ -13,7 +13,7 @@ body.search-page-bg, .about-page-bg,
 }
 .title-centered {
   position: fixed;
-  top: 23%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
