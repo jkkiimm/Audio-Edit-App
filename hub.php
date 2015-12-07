@@ -69,7 +69,7 @@
 			</form>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-8">
 				<?php if(!(empty($projects))){ ?>
 					<h3>Past projects</h3>
 				<?php } ?>
