@@ -18,12 +18,12 @@
 		if(!(file_exists($dir . $track))){
 			file_put_contents($dir . $track, fopen($link, 'r'));
 		}else{
-			$editPage = "http://wheelsofsteel.net/?track1=http://localhost/Audio-Edit-App/songs/" . $email . "/" . $track;
+			$editPage = "http://wheelsofsteel.net/?track1=http://52.90.176.21/songs/" . $email . "/" . $track;
 			echo($editPage);
 			exit;
 		}
 	}
-	$editPage = "http://wheelsofsteel.net/?track1=http://localhost/Audio-Edit-App/songs/" . $email . "/" . $track;
+	$editPage = "http://wheelsofsteel.net/?track1=http://52.90.176.21/songs/" . $email . "/" . $track;
 	mysqli_query($connection, "INSERT INTO projects(email, file_location, link) VALUES('".$email."','".$track."','".$editPage."')");
 	echo($editPage);
 ?>

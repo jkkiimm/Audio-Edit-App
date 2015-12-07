@@ -1,11 +1,16 @@
 <?php
 	include('db.php');
 	session_start();
+	$message = NULL;
+	$email = NULL;
 	$projects = array();
 	if(isset($_SESSION['email'])){
 		$message = $_SESSION['message'];
 		$email = $_SESSION['email'];
 		$result = mysqli_query($connection, "SELECT file_location, link FROM projects WHERE email='".$email."'");
+		if($result === FALSE) { 
+			die(mysql_error()); // TODO: better error handling
+		}
 		while ($row = mysqli_fetch_array($result)) {
 		    $projects[$row[0]] = $row[1];
 		}
