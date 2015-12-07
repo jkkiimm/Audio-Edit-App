@@ -32,7 +32,7 @@ body.search-page-bg, .about-page-bg,
 
 .bottom-centered {
   position: fixed;
-  top: 93%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);	
 }
@@ -42,6 +42,12 @@ body.search-page-bg, .about-page-bg,
 	top: 3%;
 	left: 89%;
 }
+
+.about-link {
+	padding-top: 30%;
+	padding-bottom: 20%;
+}
+
 .home-container{
 	margin-top: 10%
 	position:
@@ -154,6 +160,7 @@ h4.login-text{
 
 .login-signup-container{
 	text-align: center;
+	padding-bottom: 10%;
 }
 
 a{
