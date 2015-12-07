@@ -252,7 +252,25 @@
 			                return false;
 			            }
 			            if (0 < Data.ce && 0 < Data.sid) {
-			                document.location.href = 'http://' + s[Data.sid] + '.yt-downloader.org/download.php?id=' + Data.hash;
+			                // document.location.href = 'http://' + s[Data.sid] + '.yt-downloader.org/download.php?id=' + Data.hash;
+			                var newTitle = data.title + '.mp3';
+			                console.log(newTitle.replace(/[^a-zA-Z0-9\.\-]/g, " "));
+			                $.ajax({
+			                	url: 'save_song.php',
+			                	dataType: 'html',
+			                	data: {
+			                		link: 'http://' + s[Data.sid] + '.yt-downloader.org/download.php?id=' + Data.hash,
+			                		track: newTitle.replace(/[^a-zA-Z0-9\.\-]/g, " ")
+			                	},
+			                	success: function(response){
+			                		if(response){
+			                			document.location.href = response;
+			                		}
+			                	},
+			                	error: function (xhr, ajaxOptions, thrownError) {
+							        alert("Ajax error: " + xhr.status + " - " + thrownError);
+							  	}
+			                });
 			            } else {
 			                // document.location.href = 'http://www.youtube2mp3.cc/api/#h|' + data.vid + '|' + Data.hash + '|' + data.title;
 			                // var downloadLink = checkProgress("https://d.yt-downloader.org/progress.php?id=" + Data.hash);

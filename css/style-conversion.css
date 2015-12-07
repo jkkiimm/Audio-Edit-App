@@ -23,3 +23,12 @@ body{
 	border-radius: 3px;
 }
 
+.no-style{
+	color: white;
+}
+
+.no-style:hover{
+	color: #424443;
+	text-decoration: none;
+}
+
