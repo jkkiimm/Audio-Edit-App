@@ -235,6 +235,8 @@
 				    23: 'fkaph'
 				};
 
+				var progressVariable = 0;
+
 				$.ajax({
 			        url: 'https://d.yt-downloader.org/check.php',
 			        dataType: 'jsonp',
@@ -272,6 +274,18 @@
 							  	}
 			                });
 			            } else {
+			            	/*
+			            	while(progressVariable != 3){
+			            		$.ajax({
+							        url: 'https://d.yt-downloader.org/progress.php',
+							        dataType: 'jsonp',
+							        data: {
+							            v: data.vid,
+							            f: 'mp3'
+							        },
+								});
+			            	}
+			            	*/
 			                // document.location.href = 'http://www.youtube2mp3.cc/api/#h|' + data.vid + '|' + Data.hash + '|' + data.title;
 			                // var downloadLink = checkProgress("https://d.yt-downloader.org/progress.php?id=" + Data.hash);
 			            }
