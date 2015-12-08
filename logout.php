@@ -20,7 +20,7 @@
 		<script>
 		$(document).ready(function(){
 		    $.ajax({
-		        url: 'logout-action.php',
+		        url: 'logout_action.php',
 		        success: function(response){
 		        	setTimeout(
 					function(){
