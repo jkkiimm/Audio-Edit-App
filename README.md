@@ -1,7 +1,7 @@
 # youtube-soundcloud-to-mp3
 Feature that does YouTube or Soundcloud to mp3 through search
 
-### Setup
+## Setup
 
 1. Create api.js file for YouTube API key.
 
@@ -14,3 +14,7 @@ var api = {
 	"key": "YOUTUBE_API_KEY"
 }
 ```
+
+### About
+
+AudioMax allows you to download YouTube or Soundcloud videos as mp3s on the server and allows the user to edit the song for experimentation.
