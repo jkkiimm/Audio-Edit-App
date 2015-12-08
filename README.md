@@ -1,4 +1,4 @@
-# youtube-soundcloud-to-mp3
+# AudioMax
 Feature that does YouTube or Soundcloud to mp3 through search
 
 ## Setup
