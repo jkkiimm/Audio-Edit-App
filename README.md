@@ -1,5 +1,10 @@
 # AudioMax
-Feature that does YouTube or Soundcloud to mp3 through search
+AudioMax allows you to download YouTube or Soundcloud videos as mp3s on the server and allows the user to edit the song for experimentation.
+
+## Dependencies
+
+1. PHP
+2. MySQL
 
 ## Setup
 
@@ -14,7 +19,3 @@ var api = {
 	"key": "YOUTUBE_API_KEY"
 }
 ```
-
-### About
-
-AudioMax allows you to download YouTube or Soundcloud videos as mp3s on the server and allows the user to edit the song for experimentation.
