@@ -1,6 +1,5 @@
 -- CS411 A1, Group 1
-
-
+-- Creates schemas for users and projects for MySQL database.
 
 CREATE SEQUENCE "User_id_seq"
   INCREMENT 1
@@ -16,7 +15,7 @@ CREATE SEQUENCE "File_id_seq"
   START 14
   CACHE 1;
   
-CREATE TABLE files
+CREATE TABLE projects
 (
   audio_id int4 NOT NULL DEFAULT nextval('"File_id_seq"'),
   owner_id int4 NOT NULL,
