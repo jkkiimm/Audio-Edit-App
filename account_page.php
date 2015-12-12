@@ -1,15 +1,21 @@
 <?php
+	/*
+	 * Include db.php that triggers the connection to the database.
+	 */
 	include('db.php');
+	// Keep track of session variables.
 	session_start();
 
+	// When the user is already logged in, send him or her to the hub search page.
 	if(isset($_SESSION['email'])){
 		print($_SESSION['email']);
 		header('Location: hub.php');
 		die();
 	}
 
+	// Track a POST request on this page.
 	if(isset($_POST['action'])){
-		// echo "Hello";
+		// if User triggers the login button, validate login.
 		if($_POST['action'] == "login"){
 			$email = mysqli_real_escape_string($connection, $_POST["email"]);
 			$password = mysqli_real_escape_string($connection, $_POST["password"]);
@@ -26,6 +32,8 @@
  			}else{
 				$message = "Invalid email or password!";
 			}
+
+		// if user triggers the signup button, validate signup.	
 		}elseif($_POST['action'] == "signup"){
 			$name = mysqli_real_escape_string($connection,$_POST['name']);
 	        $email = mysqli_real_escape_string($connection,$_POST['email']);
@@ -51,12 +59,13 @@
 	        }
 		}
 
+		// print any error messages that appear when user attempts to login in or sign up.
     	echo("<br><p class='text-center red'>".$message."</p>");
 	}
 ?>
 <html>
 	<head>
-		<title>Account Page</title>
+		<title>AudioMax - Account Page</title>
 		<link rel="shortcut icon" href="img/favicon.png">
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<link href="css/stylesheet.css" rel='stylesheet' type='text/css' />
@@ -82,7 +91,7 @@
 					  	<input type="submit" class="btn home-button" value="Login"></input>
 					</form>
 				</div>
-				<div class="col-md-4"> <!-- col-md-5 -->
+				<div class="col-md-4">
 					<h4 class="text-center signup-text">SIGN UP</h4>
 					<form action="" method="post">
 						<div class="form-group">

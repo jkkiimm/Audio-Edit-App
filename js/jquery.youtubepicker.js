@@ -56,10 +56,12 @@
 		var results;
 		var pageToken;
 		var args;
+		
 		var getCredentials = function(key){
 			key = key||'API_KEY';
 			return typeof credentials === 'object' && credentials.hasOwnProperty(key) ? credentials[key] : false;
 		};
+
 		var getParams = function() {
 			var tmp = { 
 				'key' 		: getCredentials(),
@@ -75,6 +77,7 @@
 			}
 			return ( params = tmp );
 		};
+
 		this.doSearch = function() {
 			if(arguments.length){
 				args = $.extend({}, {query:'', onLoadInit:false, onLoadComplete:false, onLoadError:false}, arguments[0]);
@@ -121,6 +124,7 @@
 		var _this     = this;
 		var prefix    = settings.prefix;
 		var language  = settings.language;
+
 		this.template = function(type, data) {
 			var html    = '';
 			var preview = '';
@@ -173,6 +177,7 @@
 			}
 			return html;
 		};
+
 		this.populate = function(results){
 			var panel     = $('#'+settings.prefix+'-'+id);
 			var content   = panel.find('.'+settings.prefix+'-content');
@@ -200,6 +205,8 @@
 			this.preview(panel).click();
 			panel.find('.nano').nanoScroller();
 		};
+
+		// User hits the convert button. Trigger API call to youtube2mp3.cc
 		this.select = function(panel, field, clone) {
 			panel.find('.'+prefix+'-select-btn').off().on('click', function(){
 				var data = $(this).closest('.'+prefix+'-item').data('YPItemData');

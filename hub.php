@@ -1,9 +1,12 @@
 <?php
+	// The hub page checks if the user has signed in.
 	include('db.php');
 	session_start();
 	$message = NULL;
 	$email = NULL;
 	$projects = array();
+
+	// if user has signed in, then print the history of file projects user has saved.
 	if(isset($_SESSION['email'])){
 		$message = $_SESSION['message'];
 		$email = $_SESSION['email'];
@@ -19,7 +22,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AudioMax</title>
+	<title>AudioMax - Search</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="AudioMax for YouTube and Soundcloud">
@@ -89,6 +92,7 @@
 	<script type="text/javascript" src="api.js"></script>
 
 	<script type="text/javascript">
+		// check for YouTube api key that is inside api.js. Look at README.md for instructions.
 		$(function(){
 			var credentials = { 
 				'API_KEY' : api.key
@@ -96,6 +100,7 @@
 			$('.yp').youtubepicker(credentials);
 		});
 
+		// toggle JS from Soundcloud to YouTube
 		$(function(){
 			var test = false;
 			$('#toggle-event').change(function(){

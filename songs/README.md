@@ -1,1 +1,1 @@
-Folder contains songs that are downloaded based on user.
+This folder contains songs that are downloaded onto the server based what user that is logged in.

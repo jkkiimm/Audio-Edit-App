@@ -3,7 +3,7 @@
 ?>
 <html>
 	<head>
-		<title>Log out</title>
+		<title>AudioMax - Log out</title>
 		<link rel="shortcut icon" href="img/favicon.png">
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<link href="css/stylesheet.css" rel='stylesheet' type='text/css' />
@@ -18,6 +18,8 @@
 		</div>
 
 		<script>
+		// Log out page is rendered when user hits the log out button.
+		// Trigger the logout_action.php asynchronously and wait 2.5 seconds before redirecting to home page.
 		$(document).ready(function(){
 		    $.ajax({
 		        url: 'logout_action.php',
